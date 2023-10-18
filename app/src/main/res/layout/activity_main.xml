@@ -20,64 +20,111 @@
         android:textSize="40sp"
         android:textStyle="bold" />
 
+    <!--    Produto-->
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:background="#FAF3F0"
-        android:hint="Produto"
-        app:endIconDrawable="@drawable/baseline_shopping_bag"
-        app:endIconMode="custom"
-        app:endIconScaleType="center"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        android:contentDescription="Digite o produto"
+        android:padding="10dp"
+        android:textColorHint="#0E0909"
+        app:boxBackgroundColor="#FFF8DE"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterMaxLength="100"
+        app:startIconDrawable="@drawable/baseline_check_box">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/outlined_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:inputType="text" />
+            android:hint="Produto"
+            android:inputType="text"
+            android:textStyle="bold" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!--Link-->
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:background="#FAF3F0"
-        android:hint="Link"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        android:contentDescription="Digite o link produto"
+        android:padding="10dp"
+        android:textColorHint="#0E0909"
+        app:boxBackgroundColor="#FFF8DE"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterMaxLength="100"
+        app:startIconDrawable="@drawable/baseline_check_box">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/outlined_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:inputType="text" />
+            android:hint="Link do produto"
+            android:inputType="text"
+            android:textStyle="bold" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!--Preço-->
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:background="#FAF3F0"
-        android:hint="Preço"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        android:contentDescription="Digite o preço do produto"
+        android:padding="10dp"
+        android:textColorHint="#0E0909"
+        app:boxBackgroundColor="#FFF8DE"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterMaxLength="100"
+        app:startIconDrawable="@drawable/baseline_check_box">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/outlined_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:inputType="numberDecimal" />
+            android:hint="Preço"
+            android:inputType="numberDecimal"
+            android:textStyle="bold" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <!--SELECÃO-->
+
+    <Spinner
+        android:id="@+id/menu_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array" />
+
+    <Spinner
+        android:id="@+id/menu_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FFF8DE"
+        android:fontFamily="sans-serif-black"
+        android:text="Adicionar"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
 </LinearLayout>
