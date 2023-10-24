@@ -37,6 +37,7 @@
         app:startIconDrawable="@drawable/baseline_check_box">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtProduto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
@@ -63,6 +64,7 @@
         app:startIconDrawable="@drawable/baseline_check_box">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
@@ -89,6 +91,7 @@
         app:startIconDrawable="@drawable/baseline_check_box">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPreco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
@@ -113,6 +116,7 @@
         android:entries="@array" />
 
     <Button
+        android:id="@+id/btnAdd"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -124,7 +128,7 @@
         android:textStyle="bold" />
 
     <ListView
-        android:id="@+id/listViewHeroes"
+        android:id="@+id/listDesejos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/linearLayout"
